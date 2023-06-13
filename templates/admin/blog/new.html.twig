@@ -1,0 +1,15 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Mise a jour d'info
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+        <h1>Mise a jour d'un evenement</h1>
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <button type="submit" class="btn btn-primary mt-3">Valider</button>
+            {{ form_end(form) }}
+	</div>
+{% endblock %}
+

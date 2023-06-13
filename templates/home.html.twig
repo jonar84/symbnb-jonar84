@@ -1,0 +1,62 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	Accueil
+{% endblock %}
+
+{% block body %}
+	<div id="intro" class="bg-image shadow-2-strong">
+      	<div class="mask">
+			<div class="container d-flex align-items-center justify-content-center text-center mt-0">				
+					<div class="container">
+						<div class="card mb-3">
+							<h1 class="card-header text-center bienvenue">Bienvenue sur Airbnb (copie)</h1>
+							<div class="card-body">
+								<h5 class="card-title">Découvrez les Chambres et plus de 50 nouveautés</h5>
+								<h6 class="card-subtitle text-muted">Édition été</h6>
+							</div>
+							<img src="/image/plage_tropicale.png" alt="">
+							<div class="card-body">
+								<p class="card-text">Une approche revisitée du concept original d'Airbnb qui vous permet de profiter d'une ville comme si vous y habitiez en séjournant chez un hôte local et d'en savoir un peu plus sur la personne qui vous accueillera avant de réserver.</p>
+							</div>
+							<div class="card-body">
+								<a href="{{ path ('ads_index') }}" class="btn btn-primary btn-lg">Voir nos annonces</a>
+							</div>
+						</div>
+					</div>			
+        	</div>
+      	</div>
+    </div>
+
+<div class="container">
+	<h2 class="h1 mt-3 mb-5 text-center">Nos appartements stars</h2>
+	<div class="row mt-5">
+		{% for data in ads %}
+			{% include "ad/_ad.html.twig" with {'ad': data.annonce}%}
+		{% endfor %}
+	</div>
+
+	<h2 class="h1 mt-3 mb-5">Nos propriétaires stars</h2>
+	<div class="row mt-5">
+		{% for data in users %}
+			<div class="col">
+				<div class="card border-secondary mb-3">
+					<div class="card-body">
+						<h4 class="card-title">
+							{{ data.user.fullName }}
+						</h4>
+						<hr>
+						<div class="card-text">
+							<img src="{{ data.user.picture }}" alt="Avatar de {{ data.user.fullName }}" class="float-left mr-3">
+							<p>{{ data.user.introduction }}</p>
+							<a href="{{ path ('user_show', {'slug': data.user.slug}) }} " class="btn btn-success float-right">En savoir plus</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+
+{% endblock %}
+

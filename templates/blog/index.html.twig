@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Blog
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div id="blogimage" class="bg-image shadow-2-strong">
+        <div class="row d-flex align-items-center justify-content-center" style="height: 475px;">
+            <div class="text-white col-md-6">
+                <h1>Propriétaires de locations saisonnières</h1>
+                <h5>Louer sur Airbnb au Canada : se lancer dans la location court terme</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+	<div class="row my-4">
+		<div class="col">
+			<div class="jumbotron">
+				<div class="container-fluid">
+					<div class="row">
+                        {% for info in infos %}
+                            <div class="col-sm d-flex">
+                                <div class="card card-body flex-fill">
+                                    <h5>{{ info.title}}</h5> 
+                                    <img src="{{ info.image }}" alt="Image de {{ info.title }}" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveaspectratio="xMidYMid slice" viewbox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                                    <rect width="100%" height="100%" fill="#868e96"></rect>
+                                    <div class="card-body">
+                                        <p class="card-text">{{ info.intro }}</p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary">En savoir plus</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+{% endblock %}
+

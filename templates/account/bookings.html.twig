@@ -1,0 +1,43 @@
+{% extends "base.html.twig" %}
+
+{% block title %}La liste des reservations
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<h1>Mes reservations</h1>
+		<div class="alert alert-info mt-5">
+			<p>Toutes vos reservations passees et a venir</p>
+		</div>
+		{% for booking in app.user.bookings %}
+            {% set ad = booking.ad %}
+			<div class="row mt-5">
+				<div class="col-4">
+                    <img src="{{ ad.coverImage }}" class="img-fluid" alt="Photo de l'annonce">
+
+                    <div class="mt-3">
+                        {% set comment = ad.commentFromAuthor(app.user) %}
+                        {% if comment is not null %}
+                            <strong>Note donnée : </strong> {% include "partials/rating.html.twig" with {'rating': comment.rating} %}
+                        {% else %}   
+                            Vous n'avez pas encore donné de note    
+                            <a href="{{ path('booking_show', {'id': booking.id}) }}#comment" class="btn btn-link">Je donne mon avis</a>                                  
+                        {% endif %}
+                        
+                    </div>
+                </div>
+                <div class="col-8">
+                    <h4>{{ ad.title }}</h4>    
+                    <p>
+                        Réservation <strong>n°{{ booking.id }}</strong><br>
+                        Du {{ booking.startDate|date('d/m/Y') }} au {{ booking.endDate|date('d/m/Y') }}
+                    </p>
+                    <a href="{{ path('booking_show', {'id': booking.id}) }}" class="btn btn-info">Plus d'information</a>
+                </div>
+			</div>
+		{% endfor %}
+
+	</div>
+
+
+{% endblock %}

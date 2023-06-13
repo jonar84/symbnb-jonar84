@@ -1,0 +1,158 @@
+@import url('https://fonts.cdnfonts.com/css/space-marine');
+@import url('https://fonts.cdnfonts.com/css/aegean');
+@import url('https://fonts.cdnfonts.com/css/tt-knickerbockers-grotesk-trial');
+@import url('https://fonts.cdnfonts.com/css/geo');
+@import url('https://fonts.cdnfonts.com/css/meteoritox');
+@import url('https://fonts.cdnfonts.com/css/challiolethe');
+@import url('https://fonts.cdnfonts.com/css/roboto');
+@import url('bootstrap.min.css');
+
+
+#intro {
+    background-image: url("https: //lh3.googleusercontent.com/pw/AJFCJaVy9S5MtpON-FYPESAy8ntIb7lXy9cd36c0o2ei8pad9S0tmVMpOxk63-QX_QcHDZ-khMWQL9NeSzBK5vWSk7ahIJsyOv1akxgIQinuybuwvt3fG4a7ncXFX8AtdqFyZJjJPLXL_rNracTz0x6RBuazh6qQ_9yv3wIvcy43MYeBF4VrNCV0EOFmuJGfacSlB116LvVmhupyYmu4ZJdwYHc9REi_o8h6e92Vso3nHJ39Qs4uymx-MdxzwqARpilNaIA7--rekNjUHJ5-yhBEjAORD-ThnMEETIkG_8FSUZgI5rlzjL2m9lflcH5R9hd_lwb8NtNdgQ28-WXNAqnA-LYNlls-lkz3Sfz1DsGf0l74z5dPstQN02HXJ45u8MgE5xe6OxXa5Wr9XRrGpv56kfYX7DdIHKWw4EpXssF_E4-zQpajml4tIcn-EwOjr9GXl5QDefU1NTW67bCynG9GOGDHzcnqEvVivi5vhT-mSVgH3FFfiHj7uIa69c7csnYJBbd7xNIZBiFTEliXSyw-u6WNdbmq1IrB2pisMFTP1gA8MqcoBJ-g_EL1OIjAbNuKOj9WbST1TvnkVzcC3fclmne7PWRdff2NXxI-hH6uOmUe826tmIYuS_xV_JQkbs5k7cglzSRP51QjtGued5ACZNk8gXXvZIYFtfa-5uIVc9tkxBQSGoT-HsbnXlihIOuBvw34OBCngz4M1gdi6yVzSQA2dy0yqG7yfzeCGkjJAJGa5lL8A-IWU97N1_xaonl4-rb-5w95FgaDhLo-QBd3j9bcWFF3XpEBRlvlsgxU8vRW27eo1C165gTD-Aq3JuT59zG5XAnUl_drYxIHnFvT57PBVgoHbbIbOHV0IRCBJh8NAGXi1-TrteUOgSvg17yLJc07sVmWe-EGvw=w1263-h947-s-no?authuser=0");
+    height: 80vh;
+    margin-bottom: 0;
+}
+
+#blogimage {
+    background-image: url("https: //lh3.googleusercontent.com/pw/AJFCJaWv1yDRaSgw0kAqpNfqXDQSHWdiyVuAnCEZAyxt8UOf_OVO_mRgjrXSTAebE_LIg1jFq144KZw-Q3_AD1OwKdlMggPfjwJfWewz5hwqLd1j7J22OQyySRPCnL1RpMrrR17WervJrwF3xPI13WdBWJusAHFMCmVbi1ret77I33UkArffez-s-k1hdx1r3eI7juc-kkkqzL5seAo5NXnyXSuLacHq4P-e3gHpVBdE451t_uB_3_HPUTfRtpNFcqCIZwbxg_rkSsjmTJiWV7GMxwoIDpQcJwbmC3xbgvABKeSX_exDiXE9D3jbkh0AOT-9YEjGJr03jwT6Q6s7p7Rorf-RUeQPOc1I0p7KKGypL5tPg2VDwAbFgyHCEuUg7lMPmdqPqeQQPvHyXZCzHo9v21sQagMInaRbdNLxxa8IdEeOjz6JsDDjcefOkk_EPV36iUoZINKQ0B8Jet76Wu5TO_WCXZ2RrI4Dw1lonhYRgJYOPV49FJ37oGvmnTxC0EzDOAOYAcjUPPCZd4iCZLuU45qBETyTEXh87cRU_0vdiNyo4th9-xVhTlG75-2WckFT96UJKhAKDoypRobJCeYvJbcP0ZrGXHtni2Gqmcq3TCUtzyOpyMR3RwI6JlpglnHJqgM5i66oie9_ckSH9aChBsrL6mxMI_0t9UIqSsQ8-17cOBqSPLhqxW9sstl9S9JnuqyWI0D8k_60LR9gqpXyFgGFY-peOVx-Z2XH6SYCDHidE7G6WumOQ6-LrRRO9uo9co-pSqsA0b_h4ZQ1KNTiM9CUXOpwLKUtUQq_YwlEBVPC-l9sW3SiQhA46m9vsg6sUwiUwFrCMfABuLjmusawOqAbmvAb3BpH3J0tq8wbcu99RDeQqhXWlhSQM5avQw5yx9KKXRiIwoSg1w=w1422-h947-s-no?authuser=0");
+    height: 50vh;
+}
+
+div.container {
+    margin-top: 20px;
+}
+
+.policelogo {
+    font-family: 'Space Marine', sans-serif;
+}
+
+.removemarge {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menubarre {
+    font-family: 'Roboto Light', sans-serif;
+}
+
+.menubarre li,
+a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.login {
+    margin-left: 50px;
+}
+
+.bienvenue {
+    font-family: 'TT Knickerbockers Grotesk Trial', sans-serif;
+    color: rgb(12, 41, 48);
+}
+
+div.titlead {
+    padding: 2em;
+    background-size: cover;
+    background-position: center;
+
+    .btn {
+        margin-top: 2em;
+        font-size: 0.75em;
+        line-height: 0.75em;
+    }
+
+    h4,
+    h3,
+    p {
+        color: white;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    }
+}
+
+div.carousel-caption {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.badge-danger {
+    background-color: #dc3545;
+}
+
+.creation-titre {
+    font-family: 'Space Marine', sans-serif;
+}
+
+.avatar {
+    max-width: 128px;
+    max-height: 128px;
+    border-radius: 50%;
+
+    &.avatar-medium {
+        max-width: 64px;
+        max-height: 64px;
+    }
+
+    &.avatar-mini {
+        max-width: 32px;
+        max-height: 32px;
+    }
+
+    &.avatar-micro {
+        max-width: 28px;
+        max-height: 28px;
+    }
+}
+
+.datepicker table tr td.disabled,
+.datepicker table tr td.disabled:hover {
+    color: #ff0019 !important;
+}
+
+.logo {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+span.rating i {
+    color: goldenrod;
+}
+
+.alert {
+    a {
+        text-decoration: none;
+    }
+
+    .btn {
+        color: white;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .menubarre li a {
+        margin: 0;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .menubarre li a {
+        margin: 0;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .menubarre li a {
+        margin: 0;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .menubarre li a {
+        margin: 0;
+        font-size: 8px;
+    }
+}
